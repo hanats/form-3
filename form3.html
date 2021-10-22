@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            border-style: groove;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <table>
+        <tr>
+            <td style="width: 100px;">Home</td>
+            <td style="width: 200px;">Generate Link</td>
+            <td style="width: 200px;">Transaction history</td>
+            <td style="width: 150px;">Policy</td>
+            <td style="width: 100px;">Logout</td>
+        </tr>
+    </table>
+</div>
+<br>
+<div style="width: 500px; float: left; text-align: center;">
+    <form  method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td><img src="3895bde0597447029da53106f3b30858.jpg" alt="" style="width: 40%;"></td>
+        </tr>
+        <tr>
+            <td><input type="file" name="upload gambar"></td>
+        </tr>
+    </table>
+    </form>
+</div>
+<div style="margin-left: 50%;">
+    <form  method="post">
+        <table>
+            <tr>
+                <td>Title Here</td>
+                <td>:</td>
+                <td><input type="text" name="title"></td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td>:</td>
+                <td><textarea name="description" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td>Account Number</td>
+                <td>:</td>
+                <td><input type="text" name="account number"></td>
+            </tr>
+            <tr>
+                <td>Bank</td>
+                <td>:</td>
+                <td><input type="text" name="bank"></td>
+            </tr>
+            <tr>
+                <td>Account holder</td>
+                <td>:</td>
+                <td><input type="text" name="account holder"></td>
+            </tr>
+            <tr>
+                <td>Transaction</td>
+                <td>:</td>
+                <td><input type="number" name="transaction" min="1" max="15"></td>
+            </tr>
+        </table>
+        <p>*if the transaction is for 3 person, choose 3 from the drop-down list</p>
+        <p><input type="checkbox" name="transaction" style="color: green;">Send to mobile phone</p>
+        <p><input type="checkbox" name="transaction" style="color: green;">Send to Email</p>
+        <table>
+            <tr>
+                <td>Send to Mobile Phone</td>
+                <td>:</td>
+                <td><input type="text" name="mobile_phone"></td>
+            </tr>
+            <tr>
+                <td>Send to Email</td>
+                <td>:</td>
+                <td><input type="text" name="email"></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <p style="text-align: center;"><input type="submit" value="Generate Nabr Link" ></p>
+    </form>
+</div>
+</body>
+</html>
